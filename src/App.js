@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import jchem from './imgs/jchemVol100No2.jpg'
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
@@ -109,9 +110,8 @@ function Home() {
 function Bio() {
   return (
     <h2 className="bio">
-      My name is Sean Fang, born and raised out of Richmond, Virginia.<br/>
-      Currently, I'm pursuing a Computer Science Bachelor's and Robotics Master's Degree at the University of Pennsylvania. <br/>
-      My interests include entrepreneurship, computer design, piano, running, and reading. <br/>
+      I'm Sean Fang, a student working to change the world. 
+      I am currently pursuing a Computer Science BSE and Robotics MSE at UPenn.<br/>
       "The Best Way to Predict the Future is to Invent it" <br/>
       - Abraham Lincoln
     </h2>
@@ -120,9 +120,27 @@ function Bio() {
 
 function Research() {
   return (
-    <h2 className="research">
-      My research
-    </h2>
+    <div className="research">
+      <h2>
+        My research
+      </h2>
+      <div className="gallery rounded">
+        <a href="https://doi.org/10.1021/acs.jchemed.2c00987" target="_blank">
+          <div className="img-crop rounded">
+            <img src={jchem} alt="project 1"/>
+          </div>
+          <h3 className="descTitle">Polystyrene Laboratory Analysis</h3>
+          <p className="desc">Research paper on using Spin Casting to determine the relations between 
+          Polystyrene Molecular Weights and concentrations. 
+          I led the data analysis team to find appropriate curve-fit equations, 
+          and I also performed chemical experiments and data collection in a wet lab.
+          </p>
+          <span className="tag">Data Analytics</span>
+          <span className="tag">Materials Science</span>
+          <span className="tag">Chemistry</span>
+        </a>
+      </div>
+    </div>
   )
 }
 

@@ -28,6 +28,16 @@ body {
   background-blend-mode: difference;
   animation: background-movement infinite 40s linear 1s;
 }
+
+a {
+  display: block;
+  color: rgb(223, 242, 255);
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
 /* #3A7CA5,
   #576490,
   #7796CB,
@@ -127,12 +137,12 @@ li a:hover {
 }
 
 .appContent {
-  width: 70%;
+  width: 60%;
   float: right;
   overflow-x: visible;
   overflow-y: auto;
   /* background-color: rgb(0, 145, 255); */
-  /* padding: 5px 40px; */
+  padding-right: 10vw;
   color: white;
   font-size: x-large;
   font-weight: 1000;
@@ -141,15 +151,84 @@ li a:hover {
 .homeDiv {
   text-align: left;
   /* background-color: blue; */
-  padding: 15vh 12vw 75vh;
+  padding: 15vh 12vw 70vh;
   font-size: 5em;
   animation-duration: 2s;
   animation-delay: 0s;
   animation-name: elem-fade-in;
 }
 
-.bio {
-  /* background-color: blue; */
+.bioDiv {
+  padding: 30vh 0 65vh;
+}
+
+.researchDiv {
+  padding: 0 0 100vh;
+}
+
+.research {
+  font-weight: 500;
+}
+
+div.gallery {
+  width: 30%;
+  padding: 1vh 1vw;
+  transition: .3s linear;
+  text-align: left;
+  border-radius: 10px;
+}
+
+div.gallery:hover {
+  /* box-shadow: inset 25vw 0 0 0 #293449; */
+  background-color: #293449;
+}
+
+.img-crop {
+  height: 22vh;
+  width: auto;
+  overflow:hidden;
+  text-align:center;
+  border-radius: 10px;
+}
+
+div.gallery img {
+  transition: .3s linear;
+  width: 100%;
+  border-radius: 10px;
+}
+
+div.gallery:hover img {
+  filter: brightness(80%);
+}
+
+h3.descTitle {
+  text-align: left;
+  color: rgb(208, 222, 235);
+  font-weight: 700;
+  margin:1vh 0 0 0;
+}
+
+.desc {
+  margin:1vh 0 1vh 0;
+  text-align: left;
+  font-size: 0.6em;
+  text-align: justify;
+}
+
+.tag {
+  border-radius: 5px;
+  border: 1px rgb(228, 225, 166) solid;
+  text-align: center;
+  padding: 2px 5px;
+  display: inline-block;
+  margin-left: 3px;
+  margin-top: 3px;
+  font-size:0.5em;
+  width: auto;
+  font-weight: 400;
+  background-color: rgb(198, 174, 39);
+  color: rgb(255, 255, 255);
+  position: static;
 }
 
 a:link { 
