@@ -1,8 +1,228 @@
+html{scroll-behavior:smooth}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* background-color: royalblue; */
+  
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif; */
+  /* Font-family: Consolas, monaco, monospace; */
+  Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  overflow-y: scroll;
 }
 
-.App-logo {
+body {
+  background-size: 400% 400%;
+  background-image: radial-gradient(
+  #173978, 
+  #0f2855, 
+  #0f2242,
+  #0a182e,
+  #181c27,
+  #181c27
+  );
+  
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-blend-mode: difference;
+  animation: background-movement infinite 40s linear 1s;
+}
+/* #3A7CA5,
+  #576490,
+  #7796CB,
+  #A3BCF9,
+  #D1D2F9,
+  #C9CAD9); */
+
+.AppHeader {
+  position: fixed;
+  color: rgb(223, 242, 255);
+  text-decoration: none;
+}
+
+.appHeader {
+  /* background-color: royalblue; */
+  width: 20vw;
+  height: 20vh;
+  font-size: 3vh;
+  text-align: left;
+  padding: 1vh 4vw;
+  text-decoration:none;
+  color: rgb(223, 242, 255);
+  display: block;
+
+  background: transparent;
+  transition: .3s ease-out;
+}
+
+.appHeader:hover {
+  /* background-color: #555; */
+  box-shadow: inset 25vw 0 0 0 #293449;
+  color: rgb(215, 215, 215);
+  /* background: linear-gradient(to left, transparent, #555) right; */
+  /* transform: translateX(-10px); */
+}
+
+.Sean {
+  margin-bottom:2px;
+  text-decoration: none;
+}
+
+.Titles {
+  margin-top:2px;
+  font-weight: 300;
+  padding-left: 1vw;
+  padding-right: 5vw;
+  text-decoration: none;
+}
+
+
+nav {
+  text-align: left;
+  padding: 5px 20px;
+  /* width: 20%; */
+  height: 60vh;
+  overflow:hidden;
+  float: left;
+  /* background-color: aquamarine; */
+}
+
+nav .container ul {
+  list-style-type: none;
+}
+
+nav .container ul li.active {
+  background-color: #3b49df;
+  border-radius:30px;
+  transition: 0.3s;
+}
+
+nav .container ul li.active a {
+  color: #ffffff;
+}
+
+li a {
+  display: block;
+  color: rgb(223, 242, 255);
+  font-weight: 1000;
+  font-size: 1.75em;
+  padding: 1.25vh 3vw;
+  text-decoration: none;
+  /* transition: transform 250ms; */
+  background: transparent;
+  transition: .3s ease-out;
+  /* animation: text-color-shimmer infinite 40s linear 1s; */
+}
+
+li a:hover {
+  /* background-color: #555; */
+  font-weight: 1000;
+  box-shadow: inset 20vw 0 0 0 #293449;
+  color: rgb(215, 215, 215);
+  /* background: linear-gradient(to left, transparent, #555) right; */
+  /* transform: translateX(-10px); */
+}
+
+.appContent {
+  width: 70%;
+  float: right;
+  overflow-x: visible;
+  overflow-y: auto;
+  /* background-color: rgb(0, 145, 255); */
+  /* padding: 5px 40px; */
+  color: white;
+  font-size: x-large;
+  font-weight: 1000;
+}
+
+.homeDiv {
+  text-align: left;
+  /* background-color: blue; */
+  padding: 15vh 12vw 75vh;
+  font-size: 5em;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-name: elem-fade-in;
+}
+
+.bio {
+
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+@keyframes elem-fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes background-movement {
+  0% {
+    background-position: 0vw 0vh;
+  }
+  25% {
+    background-position: 0vw -300vh;
+  }
+  50% {
+    background-position: -300vw -300vh;
+  }
+  75% {
+    background-position: -300vw 0vh;
+  }
+  100% {
+    background-position: 0vw 0vh;
+  }
+}
+
+@keyframes text-color-shimmer {
+  0% {
+    color: rgb(130, 130, 130);
+  }
+  12% {
+    color: rgb(200, 200, 200);
+  }
+  25% {
+    color: rgb(130, 130, 130);
+  }
+  37% {
+    color: rgb(200, 200, 200);
+  }
+  50% {
+    color: rgb(200, 200, 200);
+  }
+  62% {
+    color: rgb(200, 200, 200);
+  }
+  75% {
+    color: rgb(200, 200, 200);
+  }
+  87% {
+    color: rgb(200, 200, 200);
+  }
+  100% {
+    color: rgb(130, 130, 130);
+  }
+
+}
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +255,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
