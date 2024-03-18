@@ -7,8 +7,8 @@ html{scroll-behavior:smooth}
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   /* Font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif; */
   /* Font-family: Consolas, monaco, monospace; */
-  Font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  /* font-family: "Poppins", sans-serif; */
+  /* Font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+  font-family: "Rubik", sans-serif;
   overflow-y: scroll;
 }
 
@@ -93,19 +93,20 @@ nav .container ul {
 }
 
 nav .container ul li.active {
-  background-color: #3b49df;
+  background-color: #0d47a5;
   border-radius:30px;
   transition: 0.3s;
 }
 
 nav .container ul li.active a {
-  color: #ffffff;
+  color: rgb(237, 248, 255);
+  
 }
 
 li a {
   display: block;
   color: rgb(223, 242, 255);
-  font-weight: 1000;
+  font-weight: 750;
   font-size: 1.75em;
   padding: 1.25vh 3vw;
   text-decoration: none;
@@ -117,9 +118,10 @@ li a {
 
 li a:hover {
   /* background-color: #555; */
-  font-weight: 1000;
-  box-shadow: inset 20vw 0 0 0 #293449;
-  color: rgb(215, 215, 215);
+  font-weight: 750;
+  box-shadow: inset 20vw 0 0 0 #518bd8;
+  color: rgb(208, 222, 235);
+  border-radius:30px;
   /* background: linear-gradient(to left, transparent, #555) right; */
   /* transform: translateX(-10px); */
 }
@@ -147,7 +149,7 @@ li a:hover {
 }
 
 .bio {
-
+  /* background-color: blue; */
 }
 
 a:link { 
