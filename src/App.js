@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import jchem from './imgs/jchemVol100No2.jpg'
+import m323 from './attachments/M323.pdf'
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
@@ -40,7 +41,7 @@ function FontImport() {
 
 function Header() {
   return (
-    <a href="#app">
+    <a href="">
       <header className="appHeader">
           <h1 className="Sean">Sean Fang</h1>
           <p className="Titles">Computer Science and Robotics</p>
@@ -112,6 +113,7 @@ function Bio() {
     <h2 className="bio">
       I'm Sean Fang, a student working to change the world. 
       I am currently pursuing a Computer Science BSE and Robotics MSE at UPenn.<br/>
+      <br/>
       "The Best Way to Predict the Future is to Invent it" <br/>
       - Abraham Lincoln
     </h2>
@@ -124,22 +126,40 @@ function Research() {
       <h2>
         My research
       </h2>
-      <div className="gallery rounded">
-        <a href="https://doi.org/10.1021/acs.jchemed.2c00987" target="_blank">
-          <div className="img-crop rounded">
-            <img src={jchem} alt="project 1"/>
-          </div>
-          <h3 className="descTitle">Polystyrene Laboratory Analysis</h3>
-          <p className="desc">Research paper on using Spin Casting to determine the relations between 
-          Polystyrene Molecular Weights and concentrations. 
-          I led the data analysis team to find appropriate curve-fit equations, 
-          and I also performed chemical experiments and data collection in a wet lab.
-          </p>
-          <span className="tag">Data Analytics</span>
-          <span className="tag">Materials Science</span>
-          <span className="tag">Chemistry</span>
-        </a>
-      </div>
+      <span>
+        <div className="gallery rounded">
+          <a href="https://doi.org/10.1021/acs.jchemed.2c00987" target="_blank">
+            <div className="img-crop rounded">
+              <img src={jchem} alt="project 1"/>
+            </div>
+            <h3 className="descTitle">ACS Published Paper</h3>
+            <p className="desc">ACS JCE published research paper on using Spin Casting to determine the relations between 
+            Polystyrene molecular weights and concentrations. 
+            I led the data analysis team to find appropriate curve-fit equations, 
+            and I also performed chemical experiments and data collection in a wet lab.
+            </p>
+            <span className="tag">Data Analytics</span>
+            <span className="tag">Materials Science</span>
+            <span className="tag">Chemistry</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={m323} target="_blank">
+            <div className="img-crop rounded">
+              <img src={jchem} alt="project 1"/>
+            </div>
+            <h3 className="descTitle">ACS JCE Published Paper</h3>
+            <p className="desc">Research paper on using Spin Casting to determine the relations between 
+            Polystyrene Molecular Weights and concentrations. 
+            I led the data analysis team to find appropriate curve-fit equations, 
+            and I also performed chemical experiments and data collection in a wet lab.
+            </p>
+            <span className="tag">Data Analytics</span>
+            <span className="tag">Materials Science</span>
+            <span className="tag">Chemistry</span>
+          </a>
+        </div>
+      </span>
     </div>
   )
 }
@@ -201,9 +221,11 @@ function App() {
           <Header/>
           <Navigation/>
         </div>
-        <div className="AppContent">
-          <AppContent/>
-        </div>
+        {/* <div className="gradient">
+        </div> */}
+          <div className="AppContent">
+            <AppContent/>
+          </div>
       </div>
     </div>
   );
