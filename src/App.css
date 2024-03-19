@@ -235,10 +235,10 @@ h3.descTitle {
   border-radius: 5px;
   border: 1px rgb(228, 225, 166) solid;
   text-align: center;
-  padding: 5px 5px;
+  padding: 3px 5px;
   display: inline-block;
-  margin-left: 5px;
-  font-size:0.5em;
+  margin-left: 8px;
+  font-size:0.45em;
   width: auto;
   font-weight: 400;
   background-color: rgb(198, 174, 39);

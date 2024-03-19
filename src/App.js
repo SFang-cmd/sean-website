@@ -3,6 +3,9 @@ import './App.css';
 import React from 'react';
 import jchem from './imgs/jchemVol100No2.jpg'
 import m323 from './attachments/M323.pdf'
+import m323img from './imgs/M323.png'
+import HiMCM22 from './attachments/HiMCM22.pdf'
+import HiMCM22img from './imgs/HiMCM22.png'
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
@@ -15,7 +18,7 @@ window.onscroll = () => {
     const sectionTop = section.offsetTop;
     // console.log(sectionTop);
     // console.log(sectionHeight);
-    // console.log(window.scrollY + sectionHeight);
+    // console.log(window.scrollY);
     if (window.scrollY + windHeight >= sectionTop) {
       // console.log(window.scrollY + sectionHeight);
       current = section.getAttribute("id"); }
@@ -130,9 +133,9 @@ function Research() {
         <div className="gallery rounded">
           <a href="https://doi.org/10.1021/acs.jchemed.2c00987" target="_blank">
             <div className="img-crop rounded">
-              <img src={jchem} alt="project 1"/>
+              <img src={jchem} alt="Journal of Chemical Education Vol100.3"/>
             </div>
-            <h3 className="descTitle">ACS Published Paper</h3>
+            <h3 className="descTitle">ACS Published Polystyrene Spincasting</h3>
             <p className="desc">ACS JCE published research paper on using Spin Casting to determine the relations between 
             Polystyrene molecular weights and concentrations. 
             I led the data analysis team to find appropriate curve-fit equations, 
@@ -146,17 +149,43 @@ function Research() {
         <div className="gallery rounded">
           <a href={m323} target="_blank">
             <div className="img-crop rounded">
-              <img src={jchem} alt="project 1"/>
+              <img src={m323img} alt="M3 Challenge 2023 Bike Problem"/>
             </div>
-            <h3 className="descTitle">ACS JCE Published Paper</h3>
-            <p className="desc">Research paper on using Spin Casting to determine the relations between 
-            Polystyrene Molecular Weights and concentrations. 
-            I led the data analysis team to find appropriate curve-fit equations, 
-            and I also performed chemical experiments and data collection in a wet lab.
+            <h3 className="descTitle">MathWorks Math Modeling Paper (2023)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
             </p>
-            <span className="tag">Data Analytics</span>
-            <span className="tag">Materials Science</span>
-            <span className="tag">Chemistry</span>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={HiMCM22} target="_blank">
+            <div className="img-crop rounded">
+              <img src={HiMCM22img} alt="HiMCM Math Modeling Challenge"/>
+            </div>
+            <h3 className="descTitle">HiMCM Math Modeling Paper (2022)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={HiMCM22} target="_blank">
+            <div className="img-crop rounded">
+              <img src={HiMCM22img} alt="HiMCM Math Modeling Challenge"/>
+            </div>
+            <h3 className="descTitle">HiMCM Math Modeling Paper (2022)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
           </a>
         </div>
       </span>
