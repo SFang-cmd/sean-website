@@ -73,16 +73,18 @@ a {
 
 .AppHeader {
   position: fixed;
+  top:0;
+  left:0;
   z-index: 3;
-  /* color: rgb(223, 242, 255); */
+  /* background-color: rgb(223, 242, 255); */
   text-decoration: none;
 }
 
 .appHeader {
   /* background-color: royalblue; */
   width: 20vw;
-  height: 16vh;
-  font-size: 3vh;
+  height: 9vw;
+  font-size: 1.75vw;
   text-align: left;
   margin: 0 0 0 2.5vw;
   padding: 0 0 0 1vw;
@@ -122,9 +124,8 @@ a {
 
 
 nav {
-  margin-left: 2vw;
   text-align: left;
-  padding: 5px 20px;
+  padding: 0 2vw;
   /* width: 20%; */
   height: 60vh;
   overflow:hidden;
@@ -151,8 +152,9 @@ li a {
   display: block;
   color: rgb(182, 190, 205);
   font-weight: 750;
-  font-size: 1.75em;
-  padding: 1.25vh 3vw;
+  font-size: 2vw;
+  height:4vh;
+  padding: 1.25vh 2vw 2vh;
   text-decoration: none;
   /* transition: transform 250ms; */
   background: transparent;
@@ -348,20 +350,20 @@ a:active {
 }
 
 @keyframes elem-fade-in {
-  from {
-    opacity: 0%;
+  0% {
+    opacity: 0;
   }
-  to {
-    opacity: 100%;
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes elem-fade-out {
-  from {
-    opacity: 100%;
+  0% {
+    opacity: 1;
   }
-  to {
-    opacity: 0%;
+  100% {
+    opacity: 0;
   }
 }
 
