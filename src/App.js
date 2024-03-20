@@ -2,18 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import jchem from './imgs/jchemVol100No2.jpg'
-import m323 from './attachments/M323.pdf'
 import m323img from './imgs/M323.png'
-import HiMCM22 from './attachments/HiMCM22.pdf'
 import HiMCM22img from './imgs/HiMCM22.png'
-import MCM22 from './attachments/MCM22.pdf'
 import MCM22img from './imgs/MCM22.png'
-import MTFC22 from './attachments/MTFC22.pdf'
 import MTFC22img from './imgs/MTFC22.jpg'
-import M322 from './attachments/M322.pdf'
 import M322img from './imgs/M322.png'
-import HiMCM21 from './attachments/HiMCM21.pdf'
 import HiMCM21img from './imgs/HiMCM21.png'
+import MinesweeperImg from './imgs/MinesweeperPrev.png'
+
+import m323 from './attachments/M323.pdf'
+import HiMCM22 from './attachments/HiMCM22.pdf'
+import MCM22 from './attachments/MCM22.pdf'
+import MTFC22 from './attachments/MTFC22.pdf'
+import M322 from './attachments/M322.pdf'
+import HiMCM21 from './attachments/HiMCM21.pdf'
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
@@ -32,11 +34,19 @@ window.onscroll = () => {
       current = section.getAttribute("id"); }
     // sectionHeight += section.offsetHeight;
   });
-
+  
   navLi.forEach((li) => {
     li.classList.remove("active");
     if (li.classList.contains(current)) {
       li.classList.add("active");
+    }
+  });
+  sections.forEach((sec) => {
+    sec.classList.remove("fade-in");
+    sec.classList.add("hidden");
+    if (sec.id === current) {
+      sec.classList.remove("hidden");
+      sec.classList.add("fade-in");
     }
   });
 };
@@ -82,8 +92,8 @@ function Navigation() {
 
 function AppContent() {
   return (
-  <div className="appContent">
-    <section id="home" className="homeDiv">
+    <div className="appContent">
+    <section id="home" className="homeDiv fade-in">
       <Home/>
     </section>
     <section id="bio" className="bioDiv">
@@ -163,9 +173,9 @@ function Research() {
             <p className="desc">Competition research paper on analyzing the benefits of 
             integrating E-Bikes with the current sustainable energy plan.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
-            <span className="tag">Math Modeling</span>
+            <span className="tag">Python</span>
+            <span className="tag">NumPy</span>
+            <span className="tag">SciKitLearn</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -247,9 +257,35 @@ function Research() {
 
 function Projects() {
   return (
-    <h2 className="projects">
-      My projects
-    </h2>
+    <div className="research">
+      <h2 className="projects">
+        My projects
+      </h2>
+      <span>
+        <div className="list rounded">
+          <a href="https://github.com/SFang-cmd/minesweeper" target="_blank">
+            <span className="listEntry">
+              <div className="projectImg rounded">
+                <img src={MinesweeperImg} alt="Minesweeper Title Page"/>
+              </div>
+              <div className="listDesc">
+                <h3 className="descTitle">Minesweeper Game</h3>
+                <p className="desc">A Java implementation of the classic Minesweeper game.
+                Play the game with different size maps, save current games to play later, and
+                load previous games to play that are saved into file IO.
+                Implemented as a freestyle "build anything" homework for the CIS1200 course at Penn.
+                </p>
+                <span className="tag">Java</span>
+                <span className="tag">Data Structures</span>
+                <span className="tag">Unit Testing</span>
+                <span className="tag">File I/O</span>
+                <span className="tag">Subtyping/Inheritance</span>
+              </div>
+            </span>
+          </a>
+        </div>
+      </span>
+    </div>
   )
 }
 
@@ -302,11 +338,11 @@ function App() {
           <Header/>
           <Navigation/>
         </div>
-        {/* <div className="gradient">
-        </div> */}
-          <div className="AppContent">
-            <AppContent/>
-          </div>
+        <div className="AppContent">
+          <div className="fade-top"></div>
+          <AppContent/>
+          <div className="fade-bot"></div>
+        </div>
       </div>
     </div>
   );
