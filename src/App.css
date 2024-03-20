@@ -175,7 +175,7 @@ li a:hover {
 }
 
 .researchDiv {
-  padding: 5vh 0 100vh;
+  padding: 5vh 0 205vh;
 }
 
 .research {
@@ -184,6 +184,7 @@ li a:hover {
 
 div.gallery {
   width: 17vw;
+  height: 65vh;
   padding: 1vh 1vw;
   margin-top: 0.5vw;
   margin-right: 0.5vw;

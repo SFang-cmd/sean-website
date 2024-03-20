@@ -6,6 +6,14 @@ import m323 from './attachments/M323.pdf'
 import m323img from './imgs/M323.png'
 import HiMCM22 from './attachments/HiMCM22.pdf'
 import HiMCM22img from './imgs/HiMCM22.png'
+import MCM22 from './attachments/MCM22.pdf'
+import MCM22img from './imgs/MCM22.png'
+import MTFC22 from './attachments/MTFC22.pdf'
+import MTFC22img from './imgs/MTFC22.jpg'
+import M322 from './attachments/M322.pdf'
+import M322img from './imgs/M322.png'
+import HiMCM21 from './attachments/HiMCM21.pdf'
+import HiMCM21img from './imgs/HiMCM21.png'
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
@@ -175,11 +183,55 @@ function Research() {
           </a>
         </div>
         <div className="gallery rounded">
-          <a href={HiMCM22} target="_blank">
+          <a href={MCM22} target="_blank">
             <div className="img-crop rounded">
-              <img src={HiMCM22img} alt="HiMCM Math Modeling Challenge"/>
+              <img src={MCM22img} alt="MCM Math Modeling Challenge"/>
             </div>
-            <h3 className="descTitle">HiMCM Math Modeling Paper (2022)</h3>
+            <h3 className="descTitle">MCM Math Modeling Paper (2022)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={MTFC22} target="_blank">
+            <div className="img-crop rounded">
+              <img src={MTFC22img} alt="Journal of Chemical Education Vol100.3"/>
+            </div>
+            <h3 className="descTitle">ACS Published Polystyrene Spincasting</h3>
+            <p className="desc">ACS JCE published research paper on using Spin Casting to determine the relations between 
+            Polystyrene molecular weights and concentrations. 
+            I led the data analysis team to find appropriate curve-fit equations, 
+            and I also performed chemical experiments and data collection in a wet lab.
+            </p>
+            <span className="tag">Data Analytics</span>
+            <span className="tag">Materials Science</span>
+            <span className="tag">Chemistry</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={M322} target="_blank">
+            <div className="img-crop rounded">
+              <img src={M322img} alt="M3 Challenge 2022 Remote Work Problem"/>
+            </div>
+            <h3 className="descTitle">MathWorks Math Modeling Paper (2022)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={HiMCM21} target="_blank">
+            <div className="img-crop rounded">
+              <img src={HiMCM21img} alt="HiMCM Math Modeling Challenge"/>
+            </div>
+            <h3 className="descTitle">HiMCM Math Modeling Paper (2021)</h3>
             <p className="desc">Competition research paper on analyzing the benefits of 
             integrating E-Bikes with the current sustainable energy plan.
             </p>
