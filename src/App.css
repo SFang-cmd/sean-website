@@ -209,7 +209,7 @@ li a:hover {
 
 div.gallery {
   width: 17vw;
-  height: 65vh;
+  height: 36vw;
   padding: 1vh 1vw;
   margin-top: 0.5vw;
   margin-right: 0.5vw;
@@ -300,11 +300,12 @@ h3.descTitle {
   color: rgb(208, 222, 235);
   font-weight: 700;
   margin:1vh 0 0 0;
+  padding-top: 1vh 0 0 0;
 }
 
 .desc {
   margin:1vh 0 1vh 0;
-  font-size: 0.65em;
+  font-size: 1vw;
   text-align: justify;
 }
 
@@ -315,7 +316,7 @@ h3.descTitle {
   padding: 3px 5px;
   display: inline-block;
   margin-left: 8px;
-  font-size:0.45em;
+  font-size:0.75vw;
   width: auto;
   font-weight: 400;
   background-color: rgb(198, 174, 39);
