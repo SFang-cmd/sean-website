@@ -18,6 +18,8 @@ import MTFC22 from './attachments/MTFC22.pdf'
 import M322 from './attachments/M322.pdf'
 import HiMCM21 from './attachments/HiMCM21.pdf'
 
+// "build": "CI=false && react-scripts --openssl-legacy-provider build",
+
 window.onscroll = () => {
   const sections = document.querySelectorAll("section");
   const navLi = document.querySelectorAll(".navBar .container ul li");
