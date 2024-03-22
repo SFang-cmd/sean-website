@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import jchem from './imgs/jchemVol100No2.jpg'
@@ -18,8 +17,6 @@ import MCM22 from './attachments/MCM22.pdf'
 import MTFC22 from './attachments/MTFC22.pdf'
 import M322 from './attachments/M322.pdf'
 import HiMCM21 from './attachments/HiMCM21.pdf'
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
 
 window.onscroll = () => {
   const sections = document.querySelectorAll("section");
@@ -36,7 +33,6 @@ window.onscroll = () => {
       current = section.getAttribute("id"); }
     // sectionHeight += section.offsetHeight;
   });
-  
   navLi.forEach((li) => {
     li.classList.remove("active");
     if (li.classList.contains(current)) {
@@ -281,7 +277,7 @@ function Projects() {
                 <span className="tag">JavaScript</span>
                 <span className="tag">CSS</span>
                 <span className="tag">ReactJS</span>
-                <span className="tag">JQuery</span>
+                <span className="tag">npm</span>
                 <span className="tag">Website Hosting</span>
               </div>
             </span>
