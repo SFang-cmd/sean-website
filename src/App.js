@@ -1,17 +1,22 @@
 import './App.css';
 import React from 'react';
-import jchem from './imgs/jchemVol100No2.jpg'
 import m323img from './imgs/M323.png'
+import jchem from './imgs/jchemVol100No2.jpg'
+import pemfcImg from './imgs/PEMFCImg.png'
+import aemfcImg from './imgs/AEMFCImg.png'
 import HiMCM22img from './imgs/HiMCM22.png'
 import MCM22img from './imgs/MCM22.png'
 import MTFC22img from './imgs/MTFC22.jpg'
 import M322img from './imgs/M322.png'
 import HiMCM21img from './imgs/HiMCM21.png'
+import RoboticsImg from './imgs/Robotics.JPG'
 import MinesweeperImg from './imgs/MinesweeperPrev.png'
 import ShortsImg from './imgs/ShortFormVideo.png'
 import WebsiteImg from './imgs/Website.png'
 
 import m323 from './attachments/M323.pdf'
+import AEMFC from './attachments/AEMFC.pdf'
+import PEMFC from './attachments/PEMFC.pdf'
 import HiMCM22 from './attachments/HiMCM22.pdf'
 import MCM22 from './attachments/MCM22.pdf'
 import MTFC22 from './attachments/MTFC22.pdf'
@@ -131,13 +136,22 @@ function Home() {
 
 function Bio() {
   return (
-    <h2 className="bio">
-      I'm Sean Fang, a student working to change the world. 
-      I am currently pursuing a Computer Science BSE and Robotics MSE at UPenn.<br/>
-      <br/>
-      "The Best Way to Predict the Future is to Invent it" <br/>
-      - Abraham Lincoln
-    </h2>
+    <div>
+      <h2 className="bio">
+        I'm Sean, a student at Penn driven by intellectual curiosity and creativity. 
+      </h2>
+      <h3>
+        This portfolio showcases my innovative projects that fuse coding, robotics, STEM disciplines, and artistic vision.
+        My work aims to meaningfully impact the world through thoughtful innovation.
+        <br/>
+        <br/>
+        I'm eager to connect with others who share my passion - let's collaborate to shape the future!
+        <br/>
+        <br/>
+        <i>The Best Way to Predict the Future is to Invent it.</i> <br/>
+        <i>- Abraham Lincoln</i>
+      </h3>
+    </div>
   )
 }
 
@@ -148,6 +162,20 @@ function Research() {
         My research
       </h2>
       <span>
+        <div className="gallery rounded">
+          <a href={m323} target="_blank">
+            <div className="img-crop rounded">
+              <img src={m323img} alt="M3 Challenge 2023 Bike Problem"/>
+            </div>
+            <h3 className="descTitle">MathWorks Math Modeling Paper (2023)</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Python</span>
+            <span className="tag">NumPy</span>
+            <span className="tag">SciKitLearn</span>
+          </a>
+        </div>
         <div className="gallery rounded">
           <a href="https://doi.org/10.1021/acs.jchemed.2c00987" target="_blank">
             <div className="img-crop rounded">
@@ -165,17 +193,31 @@ function Research() {
           </a>
         </div>
         <div className="gallery rounded">
-          <a href={m323} target="_blank">
+          <a href={PEMFC} target="_blank">
             <div className="img-crop rounded">
-              <img src={m323img} alt="M3 Challenge 2023 Bike Problem"/>
+              <img src={pemfcImg} alt="MRS PEMFC Poster"/>
             </div>
-            <h3 className="descTitle">MathWorks Math Modeling Paper (2023)</h3>
+            <h3 className="descTitle">MRS Conference PEMFC Poster Presentation</h3>
             <p className="desc">Competition research paper on analyzing the benefits of 
             integrating E-Bikes with the current sustainable energy plan.
             </p>
-            <span className="tag">Python</span>
-            <span className="tag">NumPy</span>
-            <span className="tag">SciKitLearn</span>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
+          </a>
+        </div>
+        <div className="gallery rounded">
+          <a href={AEMFC} target="_blank">
+            <div className="img-crop rounded">
+              <img src={aemfcImg} alt="MRS AEMFC Presentation"/>
+            </div>
+            <h3 className="descTitle">MRS Conference AEMFC Speaking Presentation</h3>
+            <p className="desc">Competition research paper on analyzing the benefits of 
+            integrating E-Bikes with the current sustainable energy plan.
+            </p>
+            <span className="tag">Machine Learning</span>
+            <span className="tag">Data Science</span>
+            <span className="tag">Math Modeling</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -329,6 +371,26 @@ function Projects() {
                 <span className="tag">Unit Testing</span>
                 <span className="tag">File I/O</span>
                 <span className="tag">Subtyping/Inheritance</span>
+              </div>
+            </span>
+          </a>
+        </div>
+        <div className="list rounded">
+          <a href="https://github.com/team422/FRC-22-Rewrite" target="_blank">
+            <span className="listEntry">
+              <div className="projectImg rounded">
+                <img src={RoboticsImg} alt="Robotics Win Picture"/>
+              </div>
+              <div className="listDesc">
+                <h3 className="descTitle">Robotics Programming Project</h3>
+                <p className="desc">Work as Team Leader and Member of Programming on First Robotics Competition (FRC) Team 422.
+                Main focus included PID, Vision Processing, Kinematics/Odometry, and Autonomous Pathfinding.
+                </p>
+                <span className="tag">Java</span>
+                <span className="tag">OpenCV</span>
+                <span className="tag">Object Oriented Programming</span>
+                <span className="tag">Interfaces</span>
+                <span className="tag">WPILib</span>
               </div>
             </span>
           </a>

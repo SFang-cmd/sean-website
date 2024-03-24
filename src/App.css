@@ -38,6 +38,16 @@ html{scroll-behavior:smooth}
   right:0;
 }
 
+.bio {
+  font-weight: 700;
+  font-size: 3vw;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 2vw
+}
+
 body {
   background-size: 400% 400%;
   background-image: radial-gradient(
@@ -275,6 +285,10 @@ div.list:hover img {
   border-radius: 10px;
   display:inline;
   float:left;
+}
+
+projectImg:hover {
+  filter: brightness(80%);
 }
 
 .img-crop {
