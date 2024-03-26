@@ -86,8 +86,8 @@ function Navigation() {
           <li className="bio"><a href="#bio">About Me</a></li>
           <li className="research"><a href="#research">Research</a></li>
           <li className="projects"><a href="#projects">Projects</a></li>
-          <li className="experience"><a href="#experience">Experience</a></li>
-          <li className="news"><a href="#news">News</a></li>
+          {/* <li className="experience"><a href="#experience">Experience</a></li> */}
+          {/* <li className="news"><a href="#news">News</a></li> */}
           <li className="resume"><a href="#resume">Resume</a></li>
           <li className="contact"><a href="#contact">Contact Me</a></li>
         </ul>
@@ -111,12 +111,12 @@ function AppContent() {
     <section id="projects" className="projectDiv">
       <Projects/>
     </section>
-    <section id="experience" className="experienceDiv">
+    {/* <section id="experience" className="experienceDiv">
       <Experience/>
-    </section>
-    <section id="news" className="newsDiv">
+    </section> */}
+    {/* <section id="news" className="newsDiv">
       <News/>
-    </section>
+    </section> */}
     <section id="resume" className="resumeDiv">
       <Resume/>
     </section>
