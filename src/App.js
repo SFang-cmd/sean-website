@@ -24,6 +24,8 @@ import MTFC22 from './attachments/MTFC22.pdf'
 import M322 from './attachments/M322.pdf'
 import HiMCM21 from './attachments/HiMCM21.pdf'
 
+import resume from './attachments/Resume.pdf'
+
 // "build": "CI=false && react-scripts --openssl-legacy-provider build",
 
 window.onscroll = () => {
@@ -89,7 +91,7 @@ function Navigation() {
           {/* <li className="experience"><a href="#experience">Experience</a></li> */}
           {/* <li className="news"><a href="#news">News</a></li> */}
           <li className="resume"><a href="#resume">Resume</a></li>
-          <li className="contact"><a href="#contact">Contact Me</a></li>
+          <li className="contact"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -143,7 +145,7 @@ function Bio() {
       </h2>
       <h3>
         This portfolio showcases my innovative projects that fuse coding, robotics, STEM disciplines, and artistic vision.
-        My work aims to meaningfully impact the world through thoughtful innovation.
+        My work aims to meaningfully impact the world through thoughtful invention.
         <br/>
         <br/>
         I'm eager to connect with others who share my passion - let's collaborate to shape the future!
@@ -168,18 +170,21 @@ function Research() {
             <div className="img-crop rounded">
               <img src={m323img} alt="M3 Challenge 2023 Bike Problem"/>
             </div>
-            <h3 className="descTitle">E-Bike Data Integration</h3>
-            <p className="desc">MathWorks Math Modeling research paper, to develop predictive models in forecasting electric bicycle adoption in the United States and analyze its potential impacts. 
-            I led the development of machine learning models to forecast e-bike adoption in the US and its impacts. 
-            My work included research and building a Markov chain model to analyze how increased e-bike use would affect key environmental and public health factors.
+            <h3 className="descTitle">US Electric Bike Integration</h3>
+            <p className="desc">MathWorks Math Modeling (M3) 2023 research paper to develop predictive forecasting for electric bicycle adoption in the US. 
+            Utilized machine learning to forecast e-bike sales in the US, predicting 3.1 million sales by 2028. 
+            Performed ANOVA to identify key factors driving adoption, including disposable income and battery costs. 
+            Developed a Markov Chain model to analyze the environmental and health impacts of rising e-bike usage over time.
             </p>
             <span className="tag">Python</span>
             <span className="tag">Markov Chain Models</span>
             <span className="tag">NumPy</span>
+            <span className="tag">ANOVA</span>
             <span className="tag">SciKitLearn</span>
             <span className="tag">Machine Learning</span>
             <span className="tag">LaTeX</span>
             <span className="tag">Regression</span>
+            <span className="tag">MATLAB</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -190,8 +195,8 @@ function Research() {
             <h3 className="descTitle">ACS Published Polystyrene Spincasting</h3>
             <p className="desc">ACS JCE published research paper on using Spin Casting to determine the relations between 
             Polystyrene molecular weights and concentrations. 
-            I led the data analysis team to find appropriate curve-fit equations, 
-            and I also performed chemical experiments and data collection in a wet lab, utilizing machines like a spincaster and ellipsometer.
+            Served as lead data analyst; developed monodispersity curve-fit equations relating polystyrene concentration to molecular weight. 
+            Operated ellipsometer to measure film thickness; performed chemical experiments and spincasting in a wet lab.
             </p>
             <span className="tag">Data Analytics</span>
             <span className="tag">Materials Science</span>
@@ -208,11 +213,17 @@ function Research() {
               <img src={pemfcImg} alt="MRS PEMFC Poster"/>
             </div>
             <h3 className="descTitle">Proton Exchange Membrane Fuel Cells</h3>
-            <p className="desc">Researched a more sustainable, renewable cellulose-based Proton Exchange Membrane Fuel Cells
+            <p className="desc">Patent-pending methods presented at the Materials Research Society (MRS) Fall 2022 Conference.
+            Created and treated cellulose membranes with acid solutions and a flame retardant to develop a renewable, low-cost alternative to Nafion in proton exchange membrane fuel cells. 
+            Tested the modified membranes' power output, outperforming nanocellulose alone. 
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
-            <span className="tag">Math Modeling</span>
+            <span className="tag">Wet Lab</span>
+            <span className="tag">Fuel Cells</span>
+            <span className="tag">Renewable PEMs</span>
+            <span className="tag">Cellulose Membrane</span>
+            <span className="tag">Acid Treatment</span>
+            <span className="tag">Heat Treatment</span>
+            <span className="tag">MRS</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -220,13 +231,17 @@ function Research() {
             <div className="img-crop rounded">
               <img src={aemfcImg} alt="MRS AEMFC Presentation"/>
             </div>
-            <h3 className="descTitle">MRS Conference AEMFC Speaking Presentation</h3>
-            <p className="desc">Competition research paper on analyzing the benefits of 
-            integrating E-Bikes with the current sustainable energy plan.
+            <h3 className="descTitle">Alkaline Exchange Membrane Fuel Cells</h3>
+            <p className="desc">Developed alkaline anion exchange membranes for hydrogen fuel cells using silver nanoparticle deposition, resulting in higher power output. 
+            Assisted in the nanoparticle deposition process. 
+            Presented research at the Material Research Society Fall 2022 Conference. 
+            Contributed to an innovative approach for enhancing clean energy technology.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
-            <span className="tag">Math Modeling</span>
+            <span className="tag">Fuel Cells</span>
+            <span className="tag">Nanoparticle Deposition</span>
+            <span className="tag">Alkaline Exchange Membranes</span>
+            <span className="tag">Renewable Energy</span>
+            <span className="tag">Materials Science</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -234,13 +249,16 @@ function Research() {
             <div className="img-crop rounded">
               <img src={HiMCM22img} alt="HiMCM Math Modeling Challenge"/>
             </div>
-            <h3 className="descTitle">HiMCM Math Modeling Paper (2022)</h3>
-            <p className="desc">Competition research paper on analyzing the benefits of 
-            integrating E-Bikes with the current sustainable energy plan.
+            <h3 className="descTitle">Honeybee Population Protection</h3>
+            <p className="desc">HiMCM 2022 Research paper. Developed mathematical models to predict honeybee population dynamics and optimize placement of beehives for pollination in a 20-acre land parcel. 
+            Used differential equations and Python to create a model that predicts bee colony size over time based on factors like egg-laying rate, mortality, and resource availability. 
+            Built a simulation to determine the optimal number of sustainable hives for maximizing pollination.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
             <span className="tag">Math Modeling</span>
+            <span className="tag">Optimization</span>
+            <span className="tag">Python</span>
+            <span className="tag">DiffEq</span>
+            <span className="tag">Biology</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -248,13 +266,16 @@ function Research() {
             <div className="img-crop rounded">
               <img src={MCM22img} alt="MCM Math Modeling Challenge"/>
             </div>
-            <h3 className="descTitle">MCM Math Modeling Paper (2022)</h3>
-            <p className="desc">Competition research paper on analyzing the benefits of 
-            integrating E-Bikes with the current sustainable energy plan.
+            <h3 className="descTitle">Cyclist Power Level Optimization</h3>
+            <p className="desc">MCM 2022 Research paper. Developed mathematical models to determine optimal power output for cyclists on a course based on their power profile, external conditions, and biochemistry. 
+            Used computational methods and genetic algorithms to simulate time trials and optimize power curves for the fastest race times. 
+            Analyzed the effects of perturbations like varying weather conditions and rider deviations. 
+            Extended the model to optimize team cycling strategies like drafting.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
             <span className="tag">Math Modeling</span>
+            <span className="tag">Optimization</span>
+            <span className="tag">Differential Simulation</span>
+            <span className="tag">Biochemistry</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -262,15 +283,17 @@ function Research() {
             <div className="img-crop rounded">
               <img src={MTFC22img} alt="Journal of Chemical Education Vol100.3"/>
             </div>
-            <h3 className="descTitle">ACS Published Polystyrene Spincasting</h3>
-            <p className="desc">ACS JCE published research paper on using Spin Casting to determine the relations between 
-            Polystyrene molecular weights and concentrations. 
-            I led the data analysis team to find appropriate curve-fit equations, 
-            and I also performed chemical experiments and data collection in a wet lab.
+            <h3 className="descTitle">Earthquake Damage Mitigation</h3>
+            <p className="desc">Modeling the Future Challenge (MTFC) 2022 Research paper. Developed a multiple regression model to analyze the impact of extreme weather on power outages across different climate regions in the United States. 
+            Used historical weather and power outage data to identify precipitation and temperature as key factors correlating with outage volume. 
+            Provided region-specific recommendations to mitigate risks.
             </p>
-            <span className="tag">Data Analytics</span>
-            <span className="tag">Materials Science</span>
-            <span className="tag">Chemistry</span>
+            <span className="tag">Math Modeling</span>
+            <span className="tag">Multiple Regression</span>
+            <span className="tag">Risk Mitigation</span>
+            <span className="tag">Environmental Science</span>
+            <span className="tag">Data Analysis</span>
+            <span className="tag">Data Scraping</span>
           </a>
         </div>
         <div className="gallery rounded">
@@ -278,12 +301,17 @@ function Research() {
             <div className="img-crop rounded">
               <img src={M322img} alt="M3 Challenge 2022 Remote Work Problem"/>
             </div>
-            <h3 className="descTitle">MathWorks Math Modeling Paper (2022)</h3>
-            <p className="desc">Competition research paper on analyzing the benefits of 
-            integrating E-Bikes with the current sustainable energy plan.
+            <h3 className="descTitle">Global Remote Work Analysis</h3>
+            <p className="desc">2022 MathWorks Math Modeling (M3) Research paper. Developed models to predict the proportion and impact of remote work in five US and UK cities. 
+            Used a neural network to forecast the percentage of remote-ready jobs in 2024 and 2027 based on historical employment data. 
+            Built a game theory model considering employee and employer preferences to determine the likelihood of individuals choosing remote work. 
+            Synthesized the models to assess the environmental, political, and economic impacts of remote work.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
+            <span className="tag">Neural Networks</span>
+            <span className="tag">Game Theory</span>
+            <span className="tag">Forecasting</span>
+            <span className="tag">Monte Carlo Simulation</span>
+            <span className="tag">Remote Work</span>
             <span className="tag">Math Modeling</span>
           </a>
         </div>
@@ -293,11 +321,17 @@ function Research() {
               <img src={HiMCM21img} alt="HiMCM Math Modeling Challenge"/>
             </div>
             <h3 className="descTitle">HiMCM Math Modeling Paper (2021)</h3>
-            <p className="desc">Competition research paper on analyzing the benefits of 
-            integrating E-Bikes with the current sustainable energy plan.
+            <p className="desc">
+            Modeled Lake Mead's volume using the prismoidal method on provided data and topographic maps. 
+            Identified droughts via Mann-Kendall and elevation change rates. 
+            Forecasted water levels with machine learning and Markov models that accounted for temperature, weather, usage rate, and other factors. 
+            Identified possible solutions to mitigate losses based on analyzed factors.
             </p>
-            <span className="tag">Machine Learning</span>
-            <span className="tag">Data Science</span>
+            <span className="tag">Math Calculation</span>
+            <span className="tag">Kendall-Mann</span>
+            <span className="tag">Markov Chain</span>
+            <span className="tag">Environmental Science</span>
+            <span className="tag">Drought</span>
             <span className="tag">Math Modeling</span>
           </a>
         </div>
@@ -430,17 +464,26 @@ function News() {
 
 function Resume() {
   return (
-    <h2 className="resume">
-      Find my resume
-    </h2>
+    <div>
+      <h2 className="resume">
+        Resume
+      </h2>
+      <object className="resumePDF" data={resume} type="application/pdf">
+        <p>Alternative text - include a link <a href={resume}>to the PDF!</a></p>
+      </object>
+    </div>
   )
 }
 
 function Contact() {
   return (
-    <h2 className="contact">
-      Contact me here
-    </h2>
+    <div>
+      <h2 className="contactHead">
+        Want to Connect?
+      </h2>
+      <h3 className="contactMe"> sefang@seas.upenn.edu
+      </h3>
+    </div>
   )
 }
 

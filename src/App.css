@@ -48,6 +48,11 @@ h3 {
   font-size: 2vw
 }
 
+a {
+  font-weight: 200;
+  font-size: 1.5vw
+}
+
 body {
   background-size: 400% 400%;
   background-image: radial-gradient(
@@ -161,10 +166,10 @@ nav .container ul li.active a {
 li a {
   display: block;
   color: rgb(182, 190, 205);
-  font-weight: 750;
+  font-weight: 600;
   font-size: 2vw;
   height:4vh;
-  padding: 1.25vh 2vw 2vh;
+  padding: 1.5vh 2vw 2vh;
   text-decoration: none;
   /* transition: transform 250ms; */
   background: transparent;
@@ -174,7 +179,7 @@ li a {
 
 li a:hover {
   /* background-color: #555; */
-  font-weight: 750;
+  /* font-weight: 750; */
   box-shadow: inset 20vw 0 0 0 rgba(32, 59, 95, 0.5);
   color: rgb(221, 228, 235);
   border-radius:30px;
@@ -202,11 +207,11 @@ li a:hover {
 }
 
 .bioDiv {
-  padding: 30vh 0 65vh;
+  padding: 15vh 0 65vh;
 }
 
 .researchDiv {
-  padding: 10vh 0 280vh;
+  padding: 10vh 0 360vh;
 }
 
 .projectDiv {
@@ -215,6 +220,30 @@ li a:hover {
 
 .research {
   font-weight: 500;
+}
+
+.resumeDiv {
+  padding: 10vh 0 150vh;
+}
+
+.resumePDF {
+  width:60vw;
+  height:75vw;
+}
+
+.contactDiv {
+  padding: 10vh 0 30vh;
+  /* opacity: 0.5; */
+  /* background-image: linear-gradient(rgba(2, 22, 60, 0.75), rgba(0, 0, 0, 0)); */
+}
+
+.contactHead {
+  text-align:center;
+}
+
+.contactMe {
+  font-weight:400;
+  text-align:center;
 }
 
 div.gallery {
@@ -237,9 +266,10 @@ div.gallery:hover {
 
 div.gallery img {
   transition: .3s linear;
-  width: 100%;
-  /* height: 100%; */
   border-radius: 10px;
+  width:100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 div.gallery:hover img {
@@ -292,7 +322,7 @@ projectImg:hover {
 }
 
 .img-crop {
-  height: 22vh;
+  height: 12vw;
   width: auto;
   overflow:hidden;
   text-align:center;
